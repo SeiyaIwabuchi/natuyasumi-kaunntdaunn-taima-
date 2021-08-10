@@ -12,7 +12,7 @@ const endDateString = "2021/8/22";
 const startDate = new Date(startDateString).getTime();
 const endDate = new Date(`${endDateString} 23:59:59.999`).getTime();
 let oldRemain = 0;
-let discordWebhook = localStorage.getItem("discodeWebhook");
+let discordWebhook = localStorage.getItem("discordWebhook");
 if(discordWebhook === null) console.log("discord通知はOFFです。");
 
 function App() {
